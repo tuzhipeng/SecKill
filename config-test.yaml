@@ -1,0 +1,23 @@
+app:
+  database :
+    type: mysql
+    user: root
+    password: 123456
+    dbName: testgraduatedesign
+    address: 127.0.0.1:3306
+    maxIdle: 100
+    maxOpen: 150
+  redis:
+    address: 127.0.0.1:6379
+    network: tcp
+    password:
+    maxIdle: 1000
+    maxActive : 2000
+    idleTimeout: 200
+  flushAllForTest: false
+  rabbitmq:
+    username: admin
+    password: admin
+    address: 47.93.12.71:5672
+    virtualHost: testGraduateDesign
+    queenName: Angry
