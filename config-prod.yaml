@@ -1,0 +1,23 @@
+app:
+  database :
+    type: mysql
+    user: tuzhipeng
+    password: Tuzhipeng0@0
+    dbName: graduate_design
+    address: rm-bp14z26fxx5oy676w6o.mysql.rds.aliyuncs.com
+    maxIdle: 100
+    maxOpen: 150
+  redis:
+    address: 127.0.0.1:6379
+    network: tcp
+    password:
+    maxIdle: 1000
+    maxActive : 2000
+    idleTimeout: 200
+  flushAllForTest: false
+  rabbitmq:
+    username: admin
+    password: admin
+    address: 127.0.0.1:5672
+    virtualHost: testGraduateDesign
+    queenName: Angry
