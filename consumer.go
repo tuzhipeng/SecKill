@@ -16,11 +16,11 @@ func main()  {
 		fmt.Println(err)
 	}
 	//消费者流控
-	data.Rabbitmq.Channel.Qos(
+	/*data.Rabbitmq.Channel.Qos(
 		1, //当前消费者一次能接受的最大消息数量
 		0, //服务器传递的最大容量（以八位字节为单位）
 		false, //如果设置为true 对channel可用
-	)
+	)*/
 
 	//接收消息
 	msgs, err := data.Rabbitmq.Channel.Consume(
