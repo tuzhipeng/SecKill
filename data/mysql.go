@@ -65,5 +65,6 @@ func initMysql(config conf.AppConfig) {
 	}
 
 	// TODO：创建索引
+	//"iid, cfav, price, title, image")
 
 }

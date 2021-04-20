@@ -53,9 +53,9 @@ func SubStockByIid(iid string) (err error) {
 	return nil
 }
 
-func GetOrdersByUid(uid string) []model.Order {
+func GetOrdersByUid(uid string, page int, pageSize int) []model.Order {
 	var orderList [] model.Order
-	err :=  data.Db.Where("uid = ?", uid).Order("created_at desc").Find(&orderList).Error
+	err :=  data.Db.Where("uid = ?", uid).Order("created_at desc").Limit(pageSize).Offset((page - 1) * pageSize).Find(&orderList).Error
 	if err != nil {
 		log.Panic("GetOrdersByIid err: ", err)
 	}

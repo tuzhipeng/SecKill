@@ -29,5 +29,3 @@ func initRedisConnection(config conf.AppConfig) {
 func FlushAll() (string, error) {
 	return Client.FlushAll().Result()
 }
-
-// TODO: 确保redis加载lua脚本，若未加载则加载

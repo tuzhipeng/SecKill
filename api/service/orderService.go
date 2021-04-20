@@ -26,10 +26,10 @@ func GenerateOrderService(uid string, orderList []reqStruct.OrderListItem) {
 
 }
 
-func GetOrderService(uid string) respStruct.OrderRespJson {
+func GetOrderService(uid string, page int, pageSize int) respStruct.OrderRespJson {
 	var orderResp respStruct.OrderRespJson
 	var tempOrderRespItem respStruct.OrderListItem
-	orderList := dao.GetOrdersByUid(uid)
+	orderList := dao.GetOrdersByUid(uid, page, pageSize)
 	for _, orderListItem := range orderList{
 		tempOrderRespItem.Iid = orderListItem.Iid
 		tempOrderRespItem.Oid = orderListItem.Oid

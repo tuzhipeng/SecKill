@@ -8,6 +8,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
+	"strconv"
 )
 
 func GenerateOrder(ctx *gin.Context) {
@@ -27,13 +28,15 @@ func GenerateOrder(ctx *gin.Context) {
 }
 
 func GetOrder(ctx *gin.Context)  {
+	pageStr := ctx.DefaultQuery("page", "1")
+	page, err := strconv.Atoi(pageStr)
 	uid, ok := ctx.Get("uid")
 	if !ok {
 		ctx.AbortWithStatus(http.StatusUnauthorized)
 		return
 	}
 	var orderRespJson respStruct.OrderRespJson
-	orderRespJson = service.GetOrderService(uid.(string))
+	orderRespJson = service.GetOrderService(uid.(string), page, 10)
 
 	orderRespJsonBytes, err := json.Marshal(orderRespJson)
 	if err != nil {

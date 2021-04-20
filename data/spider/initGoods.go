@@ -18,7 +18,7 @@ import (
 )
 
 //var postUrl = "127.0.0.1:9999/api/goods"
-var postUrl = "http://127.0.0.1:9999/api/goods"
+var postUrl = "http://47.93.12.71:9999/api/goods"
 var successCount = 1
 var fatalCount = 1
 var wg sync.WaitGroup
@@ -31,10 +31,10 @@ func InitGoods(fileList []string) {
 	start := time.Now()
 
 	fmt.Println("开始读取json文件中的内容赋值到结构体...")
-	for _, filePath := range fileList {
+	for _, filePath := range fileList[900:] {
 		wg.Add(1)
-
-		////filePath := fileList[0]
+		//
+		//filePath := fileList[0]
 		go func(filePath string) {
 			defer wg.Done()
 
@@ -206,9 +206,13 @@ func DoPostJson(postJsonStr []byte) error {
 	// req.Header.Set("X-Custom-Header", "myvalue")
 	req.Header.Set("Content-Type", "application/json")
 
+
+
+
 	// 发送请求
-	client := &http.Client{}
+	client := &http.Client{Timeout: time.Duration( 100*time.Second )}
 	resp, err := client.Do(req)
+
 
 	if err != nil {
 		log.Panic("doPost err :", err)
