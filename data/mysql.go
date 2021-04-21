@@ -64,7 +64,13 @@ func initMysql(config conf.AppConfig) {
 		}
 	}
 
-	// TODO：创建索引
+	//
+	Db.Model(goods).AddIndex("idx_iid", "iid")
+	Db.Model(goods).AddIndex("idx_iid", "iid", "cfav", "price", "title", "image")
+	Db.Model(goodsComment).AddIndex("idx_iid", "iid")
+	Db.Model(goodsImage).AddIndex("idx_iid", "iid")
+	Db.Model(goodsShop).AddIndex("idx_sid", "sid")
+	//Db.Model(order).AddIndex("idx_uidCreatedAt", "uid, created_at")
 	//"iid, cfav, price, title, image")
 
 }

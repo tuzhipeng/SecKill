@@ -26,7 +26,7 @@ func main()  {
 	msgs, err := data.Rabbitmq.Channel.Consume(
 		q.Name, // queue
 		//用来区分多个消费者
-		"", // consumer
+		"secKill", // consumer
 		//是否自动应答
 		//这里要改掉，我们用手动应答
 		false, // auto-ack

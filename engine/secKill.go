@@ -3,9 +3,7 @@ package engine
 import (
 	"GraduateDesign/api/controller"
 	"GraduateDesign/conf"
-	"GraduateDesign/data"
 	"GraduateDesign/middleware"
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"log"
 )
@@ -61,7 +59,7 @@ func SecKillEngine() *gin.Engine {
 	}
 
 	// 测试路由
-	testRouter := router.Group("/api/test")
+	/*testRouter := router.Group("/api/test")
 	//testRouter.Use(middleware.Auth())
 	{
 		testRouter.GET("", func(c *gin.Context) {
@@ -78,7 +76,7 @@ func SecKillEngine() *gin.Engine {
 				fmt.Println("Flushall succeed.")
 			}
 		})
-	}
+	}*/
 	return router
 
 }

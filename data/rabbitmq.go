@@ -36,6 +36,7 @@ func initRabbitMQ(config conf.AppConfig)  {
 	queenName := config.App.RabbitMQ.QueenName
 
 	MQURL := fmt.Sprintf("amqp://%s:%s@%s/%s", username, password, address,virtualHost)
+	//fmt.Println(MQURL)
 
 	Rabbitmq = &RabbitMQ{QueueName: queenName, Exchange:"", Key:"", Mqurl:MQURL}
 	var err error

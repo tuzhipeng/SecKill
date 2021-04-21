@@ -16,8 +16,8 @@ app:
     idleTimeout: 200
   flushAllForTest: false
   rabbitmq:
-    username: admin
-    password: admin
-    address: 47.93.12.71:5672
-    virtualHost: testGraduateDesign
-    queenName: Angry
+    username: MjphbXFwLWNuLXRsMzI1MnV3MDAwODpMVEFJNXRGcFZZc0doTGdmUDJWaXhNV1c=
+    password: QjRFRDBBOUMzMTU1MTZFMkZEMkZGMUQ3RTg0OTlBRTAwQTAzMkZGQjoxNjE4OTg5MTY2Mzg1
+    address: amqp-cn-tl3252uw0008.mq-amqp.cn-shenzhen-429403-a.aliyuncs.com:5672
+    virtualHost: graduateDesign
+    queenName: secKill

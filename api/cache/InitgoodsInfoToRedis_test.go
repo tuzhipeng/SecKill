@@ -13,8 +13,8 @@ func TestMain(m *testing.M) {
 
 func TestRedisWorkFlow(t *testing.T)  {
 	t.Run("测试写入商品详情到redis", testGetHotDataInsertToRedis)
-	t.Run("测试从Redis读取商品详情", testGetGoodsDetailFromRedis)
-	t.Run("测试从Redis读取商品首页列表", testGetGoodsListFromRedis)
+	//t.Run("测试从Redis读取商品详情", testGetGoodsDetailFromRedis)
+	//t.Run("测试从Redis读取商品首页列表", testGetGoodsListFromRedis)
 
 }
 func testGetHotDataInsertToRedis(t *testing.T) {
