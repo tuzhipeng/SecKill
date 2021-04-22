@@ -18,6 +18,7 @@ var secKillGoodsStockInfo []dao.SecKillGoodsItem
 //var done chan int
 
 func initSecKillGoodsStockInfo()  {
+	cache.GetHotDataInsertToRedis()
 	secKillGoodsStockInfo = dao.SelectGoodsInfoFromSecKills()
 	//for _, goodsItem := range secKillGoodsStockInfo{
 	//	goodsItem.Stock = goodsItem.Stock/3 + 1
