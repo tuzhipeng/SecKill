@@ -19,9 +19,9 @@ var secKillGoodsStockInfo []dao.SecKillGoodsItem
 
 func initSecKillGoodsStockInfo()  {
 	secKillGoodsStockInfo = dao.SelectGoodsInfoFromSecKills()
-	for _, goodsItem := range secKillGoodsStockInfo{
-		goodsItem.Stock = goodsItem.Stock/3 + 1
-	}
+	//for _, goodsItem := range secKillGoodsStockInfo{
+	//	goodsItem.Stock = goodsItem.Stock/3 + 1
+	//}
 	//done = make(chan int, 1)
 	//done <- 1
 
@@ -29,11 +29,11 @@ func initSecKillGoodsStockInfo()  {
 
 func localDecrementGoodsStock(iid string) bool  {
 	fmt.Println("secKillGoodsStockInfo : ",secKillGoodsStockInfo)
-	for _, tempGoods := range secKillGoodsStockInfo{
+	for index, tempGoods := range secKillGoodsStockInfo{
 		if tempGoods.Iid == iid{
 			// 本地预扣库存，如果扣取成功再远程访问redis扣库存
-			if tempGoods.Stock >0 {
-				tempGoods.Stock --
+			if secKillGoodsStockInfo[index].Stock >0 {
+				secKillGoodsStockInfo[index].Stock --
 				return true
 			}else {
 				return false
@@ -47,7 +47,7 @@ func localDecrementGoodsStock(iid string) bool  {
 func main() {
 
 	initSecKillGoodsStockInfo()
-
+	fmt.Println("secKillGoodsStockInfo : ",secKillGoodsStockInfo)
 	router := gin.New()
 	router.Use(middleware.Cors())
 	router.Use(middleware.Auth())

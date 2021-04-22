@@ -1,6 +1,7 @@
 package data
 
 import (
+	"GraduateDesign/api/cache"
 	"GraduateDesign/conf"
 	"log"
 )
@@ -13,6 +14,7 @@ func init() {
 
 	initMysql(config)
 	initRedisConnection(config)
+	cache.GetHotDataInsertToRedis()
 	initRabbitMQ(config)
 }
 
