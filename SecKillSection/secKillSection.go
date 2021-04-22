@@ -16,7 +16,7 @@ import (
 const port = 7777
 var secKillGoodsStockInfo []dao.SecKillGoodsItem
 var done chan int
-
+var visitCount = -1
 func initSecKillGoodsStockInfo()  {
 	cache.GetHotDataInsertToRedis()
 	secKillGoodsStockInfo = dao.SelectGoodsInfoFromSecKills()
@@ -32,8 +32,10 @@ func localDecrementGoodsStock(iid string) bool  {
 	fmt.Println("secKillGoodsStockInfo : ",secKillGoodsStockInfo)
 	for index, tempGoods := range secKillGoodsStockInfo{
 		if tempGoods.Iid == iid{
+			visitCount ++
 			// 本地预扣库存，如果扣取成功再远程访问redis扣库存
-			if secKillGoodsStockInfo[index].Stock >0 {
+			if secKillGoodsStockInfo[index].Stock >0 && visitCount %10 == 0  {
+				fmt.Println("visitCount is ", visitCount)
 				secKillGoodsStockInfo[index].Stock --
 				return true
 			}else {
