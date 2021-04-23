@@ -18,6 +18,11 @@ var secKillGoodsStockInfo []dao.SecKillGoodsItem
 var done chan int
 var visitCount = -1
 func initSecKillGoodsStockInfo()  {
+
+	_, err := data.Client.FlushAll().Result()
+	if err != nil {
+		log.Println("Redis flushAll时出错：", err.Error())
+	}
 	cache.GetHotDataInsertToRedis()
 	secKillGoodsStockInfo = dao.SelectGoodsInfoFromSecKills()
 	//for _, goodsItem := range secKillGoodsStockInfo{
