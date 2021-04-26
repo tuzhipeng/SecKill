@@ -1,0 +1,15 @@
+version: "2"
+services:
+  redis-service:
+    image: redis
+    command: redis-server --requirepass 123456
+    ports:
+      - "6379:6379"
+    restart: 'always'
+  seckill:
+    restart: 'always'
+    image: registry.cn-shenzhen.aliyuncs.com/tuzhipeng/sec_kill_server
+    ports:
+      - "9999:9999"
+    links:
+      - redis-service:redis
