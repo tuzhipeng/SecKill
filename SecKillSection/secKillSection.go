@@ -75,6 +75,7 @@ func secKillOrderHandleFunc(ctx *gin.Context)  {
 	//全局读写锁
 
 	var postSecKillOrder reqStruct.OrderListItem
+
 	ctx.BindJSON(&postSecKillOrder)
 	goodsIid := postSecKillOrder.Iid
 	if localDecrementGoodsStock(goodsIid) {

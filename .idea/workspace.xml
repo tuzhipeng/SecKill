@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b017355-fadc-4f41-8b1d-7f795ed62fa4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/httptest/seckill.lua" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/httptest/毕业设计.jmx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-dev.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-prod.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config-prod.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seckillsection-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/seckillsection-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecKillSection/secKillSection.go" beforeDir="false" afterPath="$PROJECT_DIR$/SecKillSection/secKillSection.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,21 +37,21 @@
           <entry key="Dockerfile-consumer" value="1" />
           <entry key="Dockerfile-secKillSection" value="1" />
           <entry key="bat" value="2" />
-          <entry key="go" value="308" />
+          <entry key="go" value="309" />
           <entry key="jmx" value="1" />
           <entry key="json" value="55" />
           <entry key="lua" value="1" />
           <entry key="s" value="1" />
           <entry key="yaml" value="39" />
-          <entry key="yml" value="4" />
+          <entry key="yml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="308" />
+          <entry key="Go" value="309" />
           <entry key="JSON" value="55" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="YAML" value="43" />
+          <entry key="YAML" value="45" />
           <entry key="x86 Plan9 Assembly" value="1" />
         </counts>
       </usages-collector>
@@ -66,17 +61,18 @@
           <entry key="Dockerfile-consumer" value="11" />
           <entry key="Dockerfile-secKillSection" value="33" />
           <entry key="bat" value="6" />
-          <entry key="go" value="24567" />
+          <entry key="go" value="24576" />
           <entry key="json" value="78" />
+          <entry key="lua" value="9" />
           <entry key="yaml" value="527" />
           <entry key="yml" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="24567" />
+          <entry key="Go" value="24576" />
           <entry key="JSON" value="78" />
-          <entry key="PLAIN_TEXT" value="57" />
+          <entry key="PLAIN_TEXT" value="66" />
           <entry key="YAML" value="638" />
         </counts>
       </usages-collector>
@@ -91,6 +87,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SecKillSection/secKillSection.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+              <folding>
+                <element signature="e#14#248#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
@@ -118,9 +126,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/httptest/seckill.lua">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seckillsection-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -128,15 +158,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="552">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile-consumer">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -151,31 +172,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/redis.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="22" column="9" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
-              <folding>
-                <element signature="e#14#86#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="147">
               <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -230,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/spider/spider.go" />
         <option value="$PROJECT_DIR$/api/dao/goodsDao_test.go" />
         <option value="$PROJECT_DIR$/api/service/serviceConst.go" />
         <option value="$PROJECT_DIR$/utils/util.go" />
@@ -272,7 +271,6 @@
         <option value="$PROJECT_DIR$/data/mysql.go" />
         <option value="$PROJECT_DIR$/engine/secKill.go" />
         <option value="$PROJECT_DIR$/data/init.go" />
-        <option value="$PROJECT_DIR$/SecKillSection/secKillSection.go" />
         <option value="$PROJECT_DIR$/Dockerfile-secKillSection" />
         <option value="$PROJECT_DIR$/Dockerfile-consumer" />
         <option value="$PROJECT_DIR$/serverr-compose.yml" />
@@ -281,6 +279,8 @@
         <option value="$PROJECT_DIR$/server-compose.yml" />
         <option value="$PROJECT_DIR$/config-dev.yaml" />
         <option value="$PROJECT_DIR$/config-prod.yaml" />
+        <option value="$PROJECT_DIR$/httptest/seckill.lua" />
+        <option value="$PROJECT_DIR$/SecKillSection/secKillSection.go" />
       </list>
     </option>
   </component>
@@ -315,6 +315,11 @@
               <item name="GraduateDesign" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraduateDesign" type="462c0819:PsiDirectoryNode" />
               <item name="httptest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduateDesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduateDesign" type="462c0819:PsiDirectoryNode" />
+              <item name="SecKillSection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -735,34 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SecKillSection/secKillSection.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile-secKillSection">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seckillsection-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -787,13 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -848,7 +822,42 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/httptest/seckill.lua">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seckillsection-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="75" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SecKillSection/secKillSection.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="77" column="4" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="4" />
+          <folding>
+            <element signature="e#14#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
