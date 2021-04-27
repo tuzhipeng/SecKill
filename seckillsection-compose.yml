@@ -2,10 +2,10 @@ version: "2"
 services:
   consumer-service:
     restart: 'always'
-    image: registry.cn-shenzhen.aliyuncs.com/tuzhipeng/sec_kill_consumer
+    image: registry.cn-shenzhen.aliyuncs.com/tuzhipeng/sec_kill_consumer:0.1
 
   seckill:
     restart: 'always'
-    image: registry.cn-shenzhen.aliyuncs.com/tuzhipeng/sec_kill_section
+    image: registry.cn-shenzhen.aliyuncs.com/tuzhipeng/sec_kill_section:0.1
     ports:
     - "7777:7777"

@@ -1,23 +1,23 @@
 app:
   database :
     type: mysql
-    user: root
-    password: 123456
-    dbName: graduatedesign
-    address: 127.0.0.1:3306
-    maxIdle: 100
-    maxOpen: 150
+    user: tuzhipeng
+    password: Tuzhipeng0@0
+    dbName: graduate_design
+    address: rm-bp14z26fxx5oy676w6o.mysql.rds.aliyuncs.com
+    maxIdle: 200
+    maxOpen: 200
   redis:
-    address: 127.0.0.1:6379
+    address: 47.93.12.71:6379
     network: tcp
-    password:
+    password: 123456
     maxIdle: 1000
     maxActive : 2000
     idleTimeout: 200
   flushAllForTest: false
   rabbitmq:
-    username: admin
-    password: admin
-    address: 47.93.12.71:5672
-    virtualHost: testGraduateDesign
-    queenName: Angry
+    username: MjphbXFwLWNuLXRsMzI1MnV3MDAwODpMVEFJNXRGcFZZc0doTGdmUDJWaXhNV1c=
+    password: QjRFRDBBOUMzMTU1MTZFMkZEMkZGMUQ3RTg0OTlBRTAwQTAzMkZGQjoxNjE4OTg5MTY2Mzg1
+    address: amqp-cn-tl3252uw0008.mq-amqp.cn-shenzhen-429403-a.aliyuncs.com:5672
+    virtualHost: graduateDesign
+    queenName: secKill

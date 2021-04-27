@@ -8,7 +8,7 @@ services:
     restart: 'always'
   seckill:
     restart: 'always'
-    image: registry.cn-shenzhen.aliyuncs.com/tuzhipeng/sec_kill_server
+    image: registry.cn-shenzhen.aliyuncs.com/tuzhipeng/sec_kill_server:0.1
     ports:
       - "9999:9999"
     links:
